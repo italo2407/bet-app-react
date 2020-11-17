@@ -1,15 +1,16 @@
 import React from 'react';
 import Header from './components/Header'
 import EventList from './components/EventList'
+import { AppProvider } from './context';
 
 import './style/main.css';
 
 const App = () => {
   return (
-    <div className="App">
+    <AppProvider>
       <Header />
       <EventList />
-    </div>
+    </AppProvider>
   );  
 }
 

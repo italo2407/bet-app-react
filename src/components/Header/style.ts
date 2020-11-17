@@ -23,23 +23,4 @@ Style.leftSide = `
     cursor-pointer
 `
 
-Style.modalOverlay = `
-    w-full
-    h-full
-    bg-gray-500
-    bg-opacity-50
-    z-30
-    inset-0
-    fixed
-`
-
-Style.betSlipContainer = `
-    w-4/5
-    bg-white
-    absolute
-    inset-y-0
-    right-0 
-    z-50
-`
-
 export default Style

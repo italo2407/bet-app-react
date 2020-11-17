@@ -10,7 +10,7 @@ const EventList = () => {
     }, [])
 
     return (
-        <div className="mx-auto px-6">
+        <div data-testid="eventList" className="mx-auto px-6">
             {
             events.map( (event: EventType, i:number) => {
                 if(event.markets.length === 0)

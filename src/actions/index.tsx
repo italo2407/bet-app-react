@@ -14,7 +14,7 @@ export const addBet = (newBet: SelectionType) : ActionType  => (
     }
 )
 
-export const removeBet = (id: SelectionType) : ActionType  => (
+export const removeBet = (id: string) : ActionType  => (
     {
         type: REMOVE_BET,
         payload: {

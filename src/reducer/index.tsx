@@ -5,7 +5,11 @@ export type StateType = {
     bets: SelectionType[]
 }
 
-export const reducer = (state: StateType, action: ActionType) => {
+export const initialState: StateType = {
+    bets : []
+}
+
+export const reducer = (state: StateType = initialState, action: ActionType) => {
     switch (action.type) {
         case ADD_BET: {
             return {
@@ -13,9 +17,12 @@ export const reducer = (state: StateType, action: ActionType) => {
                 bets: [...state.bets, action.payload.newBet]
             }
         }
-        case REMOVE_BET:
-            return state.bets.filter(bet => bet.id !== action.payload.removeId)
-
+        case REMOVE_BET: {
+            return {
+                ...state,
+                bets: state.bets.filter(bet => bet.id !== action.payload.removeId)
+            }
+        }
         default:
             return state;
     }
