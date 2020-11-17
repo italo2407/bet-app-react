@@ -1,6 +1,6 @@
 # Bet App
 
-A little project where you can see a list of sport events and make bets. This project was develop using React, Typescript and Tailwind CSS.
+A little project where you can see a list of sport events and make bets. This project was develop using React, Typescript and Tailwind CSS. Tailwild CSS is a utility-first CSS framework to allow us building custom designs rapidly.
 
 ## Available Scripts
 
