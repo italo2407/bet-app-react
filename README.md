@@ -1,6 +1,6 @@
 # Bet App
 
-A little project where you can see a list of sport events and make bets. In this project was develop using React, Typescript and Tailwind CSS.
+A little project where you can see a list of sport events and make bets. This project was develop using React, Typescript and Tailwind CSS.
 
 ## Available Scripts
 
